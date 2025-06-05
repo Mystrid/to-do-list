@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>To-Do List</header>
+    <footer>
+        <form id="new-item-form">
+            <input id="text-box" type="text" placeholder="Enter your tasks here">
+            <button id="add-button">+</button>
+        </form>
+    </footer>
+    <main></main>
+    
+    <div id="overlay"></div>
+    <div class="modal">
+        <h2>Delete task?</h2>
+        <span id="delete-modal-text"></span>
+        <div class="button-div">
+            <button class="confirm-delete-button confirm-button">Delete</button>
+            <button class="cancel-button confirm-button">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>
