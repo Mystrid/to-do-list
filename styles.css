@@ -113,7 +113,7 @@ main {
     background-color: rgb(47, 47, 47);
     border: 1px solid rgb(76, 76, 76);
     border-radius: 8px;
-    padding: 4px 12px 24px 12px;
+    padding: 8px 24px 24px 24px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -123,7 +123,7 @@ main {
 .button-div {
     display: flex;
     justify-content: space-evenly;
-    column-gap: 10px;
+    column-gap: 15px;
     margin-top: 40px;
 }
 
