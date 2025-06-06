@@ -6,6 +6,7 @@ const deleteModal = document.querySelector(".modal");
 const deleteModalText = document.querySelector("#delete-modal-text");
 const deleteButton = document.querySelector(".confirm-delete-button");
 const cancelButton = document.querySelector(".cancel-button");
+let taskToDelete;
 
 form.addEventListener("submit", e => {
   e.preventDefault();
@@ -34,16 +35,16 @@ form.addEventListener("submit", e => {
     overlay.style.display = "block";
     deleteModal.style.display = "block";
     deleteModalText.innerText = `"${item.innerText}" will be permanently deleted.`;
-
-    deleteButton.addEventListener("click", () => {
-      list.removeChild(item);
-      hideModal();
-    });
+    taskToDelete = item;
   });
   input.value = "";
 });
 
 overlay.addEventListener("click", hideModal);
+deleteButton.addEventListener("click", () => {
+  list.removeChild(taskToDelete);
+  hideModal();
+});
 cancelButton.addEventListener("click", hideModal);
 
 function hideModal() {
