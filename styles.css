@@ -30,6 +30,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
 }
 
 .task-divider {
@@ -144,7 +145,7 @@ footer {
 
 .modal {
     display: none;
-    width: 320px;
+    width: 340px;
     background-color: rgb(47, 47, 47);
     border: 1px solid rgb(76, 76, 76);
     border-radius: 8px;
