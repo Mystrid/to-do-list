@@ -9,13 +9,18 @@
 </head>
 <body>
     <header>To-Do List</header>
+    <main>
+        <span class="greeting-text">Your tasks will appear here.</span>
+        <div class="incomplete"></div>
+        <span class="task-divider">&#9662; Completed</span>
+        <div class="complete"></div>
+    </main>
     <footer>
         <form id="new-item-form">
             <input id="text-box" type="text" placeholder="Enter your tasks here">
             <button id="add-button">+</button>
         </form>
     </footer>
-    <main></main>
     
     <div id="overlay"></div>
     <div class="modal">
@@ -26,5 +31,13 @@
             <button class="cancel-button confirm-button">Cancel</button>
         </div>
     </div>
+
+    <template id="todo-item-template">
+        <div class="list-item" data-id>
+            <input type="checkbox">
+            <div class="list-item-text"></div>
+            <button><img class="delete-icon" src="icons/delete.png" alt=""></button>
+        </div>
+    </template>
 </body>
 </html>
